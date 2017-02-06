@@ -49,3 +49,7 @@ The first two characters of each substring is the pin number.  The third charact
 Example string
 
 `"01XL02XL03OH04OL05IL06IL.......39XL40OH"`
+
+###Things to Consider
++ There are several pins on the header that cannot be used: grounds, 5v rails, etc. These pins are automatically set to the X mode and there is no option to set them in the GUI but they still have a panel to make things more organized.
++ Some pins have more complex functions such as PWM which is not yet implemented. This will require a more complex data model but I would like to see this implemented in the future.
