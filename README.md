@@ -4,13 +4,13 @@ A simple client/server application to easily and remotely control a Raspberry Pi
 ##Building & Running
 
 ###Server
-Currently the server is a simple python script. You will find it in /Server/.  All you need to do is put this script on your Raspberry Pi give it execution privledges, and run it using bash or sh.
+Currently the server is a simple python script. You will find it in /Server/.  All you need to do is put this script on your Raspberry Pi give it execution privledges, and run it using bash or python.
 
 Example
 
 `chmod +x EasyGPIO_server.py`
 
-`./EasyGPIO_server.py` or  `sh EasyGPIO_server.py`
+`./EasyGPIO_server.py` or  `python EasyGPIO_server.py`
 
 That's all there is to it.  The server should find your local ip address and bind a socket to it on port 5005.  It will listen until a client connects.
 
@@ -19,7 +19,7 @@ The Client is a C# .net program. It provides a GUI with 3 modes for each pin on 
 
 
 ##Data Model
-The client and server communicate over a TCP socket. The client and server exchange data back and forth over a fixed interval that is defined in the server script.  By defualt this interval is every 100ms.  The reason for this is to save bandwidth.
+The client and server communicate over a TCP socket. The client and server exchange data back and forth over a fixed interval that is defined in the server script.  By default this interval is every 100ms.  The reason for this is to save bandwidth.  The actual time between exchanges will vary depending on the network.
 
 Each pin can be set to 1 of 3 modes.
 
