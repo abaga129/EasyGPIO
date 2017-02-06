@@ -37,4 +37,15 @@ Each pin can be set to 1 of 3 modes.
 7. This process repeats until the client disconnects.
 
 ###Format of the strings being sent
+The strings transmited through the socket are 160 characters long which means 160bytes of data plus headers for each packet. The string can be divided into 40 separate strings of 4 characters; each representing a pin on the Pi. We will call these substrings.
+The first two characters of each substring is the pin number.  The third character represents Input or output. The fourth character represents the level of the pin.
 
+|Index|Meaning|        Possible Value                   |
+|:----|:-----:|:---------------------------------------:|
+| 0-1 | Pin # | 01 - 40 (must be two bytes)             |
+|  2  | Mode  |"I"=input, "O"=output, "X"=Off           |
+|  3  | Level |"H"=high, "L"=low (set to "L" by default)|
+
+Example string
+
+`"01XL02XL03OH04OL05IL06IL.......39XL40OH"`
