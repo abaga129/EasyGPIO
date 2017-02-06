@@ -24,8 +24,8 @@ BUFFER_SIZE = 160
 PREV_DATA = ''
 PREV_SEND = ''
 
-log = open('EasyPIOLog.txt', 'w')
-log.write('EasyPIOLog.txt\n\n')
+log = open('EasyGPIOLog.txt', 'w')
+log.write('EasyGPIOLog.txt\n\n')
 
 
 ip = ""
@@ -60,7 +60,7 @@ while 1:
     conn, addr = s.accept()
     conn.send('Handshake')
 
-    log = open('EasyPIOLog.txt', 'a')
+    log = open('EasyGPIOLog.txt', 'a')
     print 'Connection address:', addr, '\n'
     log.write('Connection address: ' + str(addr) + '\n\n')
 
