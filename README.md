@@ -41,7 +41,7 @@ The strings transmited through the socket are 160 characters long which means 16
 The first two characters of each substring is the pin number.  The third character represents Input or output. The fourth character represents the level of the pin.
 
 |Index|Meaning|        Possible Value                   |
-|:----|:-----:|:---------------------------------------:|
+|:---:|:-----:|:---------------------------------------:|
 | 0-1 | Pin # | 01 - 40 (must be two bytes)             |
 |  2  | Mode  |"I"=input, "O"=output, "X"=Off           |
 |  3  | Level |"H"=high, "L"=low (set to "L" by default)|
