@@ -1,0 +1,9 @@
+C:\Users\Ethan\Documents\Visual Studio 2017\Projects\EasyGPIO\EasyGPIO\bin\Release\EasyGPIO.exe.config
+C:\Users\Ethan\Documents\Visual Studio 2017\Projects\EasyGPIO\EasyGPIO\bin\Release\EasyGPIO.exe
+C:\Users\Ethan\Documents\Visual Studio 2017\Projects\EasyGPIO\EasyGPIO\bin\Release\EasyGPIO.pdb
+C:\Users\Ethan\Documents\Visual Studio 2017\Projects\EasyGPIO\EasyGPIO\obj\Release\EasyGPIO.csprojResolveAssemblyReference.cache
+C:\Users\Ethan\Documents\Visual Studio 2017\Projects\EasyGPIO\EasyGPIO\obj\Release\EasyGPIO.Form1.resources
+C:\Users\Ethan\Documents\Visual Studio 2017\Projects\EasyGPIO\EasyGPIO\obj\Release\EasyGPIO.Properties.Resources.resources
+C:\Users\Ethan\Documents\Visual Studio 2017\Projects\EasyGPIO\EasyGPIO\obj\Release\EasyGPIO.csproj.GenerateResource.Cache
+C:\Users\Ethan\Documents\Visual Studio 2017\Projects\EasyGPIO\EasyGPIO\obj\Release\EasyGPIO.exe
+C:\Users\Ethan\Documents\Visual Studio 2017\Projects\EasyGPIO\EasyGPIO\obj\Release\EasyGPIO.pdb

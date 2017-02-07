@@ -1,0 +1,9 @@
+*.userprefs
+*.exe
+*.exe.*
+*.pdb
+*.cache
+*.resources
+TemporaryGeneratedFile*
+*.FilesWrittenAbsolute*
+*.dll
