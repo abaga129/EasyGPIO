@@ -17,7 +17,7 @@ print 'EasyGPIO Server - Version 1.0 beta'
 print 'Written by: Ethan Reker - www.modernmetalproduction.com'
 print 'For technical support, email Ethan at ctrecordingslive@gmail.com'
 print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
-print '\nLogging data to EasyPIOLog.txt..'
+print '\nLogging data to EasyGPIOLog.txt..'
 
 TCP_PORT = 5005
 BUFFER_SIZE = 160
@@ -35,8 +35,9 @@ if ip == '':
     f = os.popen('ifconfig wlan0 | grep "inet\ addr" | cut -d: -f2 | cut -d " " -f1')
     ip = f.read()
     if ip == '':
-        print 'No Local IP Address Found Please Make Sure You Are Connected To The Local Network.'
-        log.write('No Local IP Address Found Please Make Sure You Are Connected To The Local Network.\n')
+	err_msg = 'No Local IP Address Found Please Make Sure You Are Connected To The Local Network.'
+        print err_msg
+        log.write(err_msg + '\n')
     else:
         print 'Local IP on wlan0: ', ip
         log.write('Local IP on wlan0: ' +  ip + '\n')
@@ -89,7 +90,7 @@ while 1:
                 else:
                     GPIO.output(pinNo, GPIO.LOW)
             elif mode == 'I':
-                GPIO.setup(pinNo, GPIO.IN)
+                GPIO.setup(pinNo, GPIO.IN, GPIO.PUD_DOWN)
                 if GPIO.input(pinNo):
                     sendData += 'H'
                 else:
@@ -107,6 +108,5 @@ while 1:
         time.sleep(0.1)
     GPIO.cleanup()    
     conn.close()
-        
+
 #sample message "01OH02IL03XL05OH05IL06XL07OH08IL09XL10OH11IL12XL13OH14IL15XL16OH17IL18XL01OH02IL03XL05OH05IL06XL07OH08IL09XL10OH11IL12XL13OH14IL15XL16OH17IL18XL
-    
