@@ -3,6 +3,8 @@ A simple client/server application to easily and remotely control a Raspberry Pi
 
 ![alt text](http://www.modernmetalproduction.com/wp-content/uploads/edd/2017/01/client-e1484251710962.png)
 
+![alt text](http://www.modernmetalproduction.com/wp-content/uploads/2017/01/run.png)
+
 ##Building & Running
 
 ###Server
