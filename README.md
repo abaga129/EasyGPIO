@@ -1,6 +1,8 @@
 # EasyGPIO
 A simple client/server application to easily and remotely control a Raspberry Pi's GPIO pins.  Currently this is designed for models that use a 40-pin GPIO header but it can easily be adapted to other models.
 
+![alt text](http://www.modernmetalproduction.com/wp-content/uploads/edd/2017/01/client-e1484251710962.png)
+
 ##Building & Running
 
 ###Server
