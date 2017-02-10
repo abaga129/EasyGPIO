@@ -21,6 +21,13 @@ That's all there is to it.  The server should find your local ip address and bin
 ###Client
 The Client is a C# .net program. It provides a GUI with 3 modes for each pin on the Pi.
 
+Building the client is fairly straightforward. Just open 'EasyGPIO.sln' using either Visual Studio or Mono-Develop and build it.  It has been built and tested on both Windows and Ubuntu.
+
+####Windows
+Install .net framework (most windows installations already have it installed)
+####Linux
+Install mono-complete `sudo apt-get install mono-complete`
+
 
 ##Data Model
 The client and server communicate over a TCP socket. The client and server exchange data back and forth over a fixed interval that is defined in the server script.  By default this interval is every 100ms.  The reason for this is to save bandwidth.  The actual time between exchanges will vary depending on the network.
