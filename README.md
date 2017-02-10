@@ -5,7 +5,7 @@ A simple client/server application to easily and remotely control a Raspberry Pi
 
 ![alt text](http://www.modernmetalproduction.com/wp-content/uploads/2017/01/run.png)
 
-You can download the binaries here - [EasyGPIO_client.zip](www.modernmetalproduction.com/free-downloads/EasyGPIO_client.zip)
+If you would rather just use the pre-built binary, you can download it here - [EasyGPIO_client.zip](www.modernmetalproduction.com/free-downloads/EasyGPIO_client.zip)
 
 ##Building & Running
 
